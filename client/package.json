@@ -24,6 +24,7 @@
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.2",
+    "swiper": "^6.0.2",
     "yup": "^0.29.1"
   },
   "scripts": {

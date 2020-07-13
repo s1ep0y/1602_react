@@ -1,0 +1,114 @@
+.page-header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    &__link {
+        color: rgba(255,255,255,0.5);
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin-right: 20px;
+        &:hover {
+            color: rgba(255,255,255,0.75);
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-right: 24px;
+        height: 100%;
+    }
+}
+
+.social-links {
+    position: relative;
+    height: 36px;
+    &__icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0;
+        border: none;
+        position: relative;
+        padding: 18px;
+        background: none;
+        box-sizing: border-box;
+        margin-right: 14px;
+        content: '';
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            // background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            z-index: 0;
+        }
+        &--vk {
+            &::before {
+                background-image: url("./../img/icons/vk.svg");
+            }
+        }
+        &--telegram {
+            &::before {
+                background-image: url("./../img/icons/telegram.svg");
+            }
+        }
+        &--instagram {
+            &::before {
+                background-image: url("./../img/icons/instagram.svg");
+            }
+        }
+    }
+}
+
+.cart-button {
+    margin-left: 24px;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    border: none;
+    position: relative;
+    padding: 18px;
+    background: none;
+    box-sizing: border-box;
+    content: '';
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 44px;
+        height: 34px;
+        background-image: url("./../img/icons/cart.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        z-index: 0;
+    }
+
+}
+
+.main-slider {
+    height: 100vh;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

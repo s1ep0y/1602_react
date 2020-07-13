@@ -1,6 +1,7 @@
 import React from 'react';
 import { uniqueId } from 'lodash';
 import './App.scss';
+import './style/header.scss'
 import '@csstools/normalize.css';
 import "antd/dist/antd.css";
 import { BrowserRouter as Router,   Switch,
